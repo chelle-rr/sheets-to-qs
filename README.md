@@ -1,9 +1,6 @@
 Use this script to turn spreadsheet data in this format to QuickStatements.
 Currently, only for use with the following data types (no times or quantities, sorry!):
- * Monolingual text
- * Strings
- * URLs
- * External identifiers
+ * Strings (monolingual text, URLs, external identifiers)
  * Items
 
 To use:
