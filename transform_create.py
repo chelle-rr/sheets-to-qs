@@ -7,7 +7,7 @@ import os.path
 # this line reads the tsv as a dictionary, storing the top row as keys for the
 # values in each subsequent row
 
-tsv = input("Enter the name of your .tsv file, including extension (must be in same folder as this script): ")
+tsv = (input("Enter the name of your .tsv file, excluding extension (must be in same folder as this script): ") + ".tsv")
 thing = csv.DictReader(open(tsv), delimiter="\t",quoting=csv.QUOTE_NONE)
 
 qid_re = re.compile('\A(Q[0-9]*)')
