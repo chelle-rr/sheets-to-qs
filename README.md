@@ -1,7 +1,8 @@
 Use this script to turn spreadsheet data to QuickStatements.
-Currently, only for use with the following data types (no times or quantities, sorry!):
+Currently, only for use with the following data types:
  * Strings (monolingual text, URLs, external identifiers)
  * Items
+ * Dates in EDTF format (day, month, year precision only)
 
 To use:
 1.  Download the script as a .zip, unzip, and place the folder in a location convenient for you
