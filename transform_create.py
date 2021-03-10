@@ -27,5 +27,5 @@ with open(output,'w') as csv_out:
 				csv_out.write('LAST\t{}\t+{}T00:00:00Z/09\n'.format(key,value))
 			elif qid_find and key != "P8":
 				csv_out.write('LAST\t{}\t{}\n'.format(key,value))
-			else:
+			elif value:
 				csv_out.write('LAST\t{}\t\"{}\"\n'.format(key,value))
