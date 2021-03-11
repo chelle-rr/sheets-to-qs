@@ -25,10 +25,10 @@ with open(output,'w') as csv_out:
 					csv_out.write('\t{}\t+{}T00:00:00Z/11\n'.format(key,value))
 				elif month_date_find:
 					csv_out.write(qid)
-					csv_out.write('\t{}\t+{}T00:00:00Z/10\n'.format(key,value))
+					csv_out.write('\t{}\t+{}-00T00:00:00Z/10\n'.format(key,value))
 				elif year_date_find:
 					csv_out.write(qid)
-					csv_out.write('\t{}\t+{}T00:00:00Z/09\n'.format(key,value))
+					csv_out.write('\t{}\t+{}-00-00T00:00:00Z/09\n'.format(key,value))
 				elif qid_find and key != "P8":
 					csv_out.write(qid)
 					csv_out.write('\t{}\t{}\n'.format(key,value))
